@@ -1,0 +1,10 @@
+Mon Jun 21 15:01:02 2021: Server was asked to start on port: '44647'
+Mon Jun 21 15:01:02 2021: Server is using token UUID: '7d9384d8-2a08-4366-af2e-44f927faadde'
+Mon Jun 21 15:01:02 2021: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+Mon Jun 21 15:01:02 2021: Attempting to start server on port '44647'
+Mon Jun 21 15:01:02 2021: XCD main fifo: created main fifo '/tmp/xcdmain7d9384d8-2a08-4366-af2e-44f927faadde', fd read = 13
+Mon Jun 21 15:01:02 2021: Running Dispatch Server
+Mon Jun 21 15:01:02 2021: Version 1.0.1
+Mon Jun 21 15:01:02 2021: Dispatch Server: Accepted socket connection from client
+Mon Jun 21 15:01:02 2021: EXCHANGE_TOKEN received, server token: 7d9384d8-2a08-4366-af2e-44f927faadde, passed token: 7d9384d8-2a08-4366-af2e-44f927faadde
+Mon Jun 21 15:01:02 2021: SESSION_MGR: creating session with session uuid: '7590a0ac-0a50-43b9-8bf4-3b5324fd1e23' and name 'bin_search'
