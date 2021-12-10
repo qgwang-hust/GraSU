@@ -1,4 +1,4 @@
-![logo](GraSU_free-file.png#w10)
+![logo](GraSU_free-file.png =10x10)
 
 # GraSU: A Fast Graph Update Library for FPGA-based Dynamic Graph Processing
 
