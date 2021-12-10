@@ -1,92 +1,0 @@
-2021-06-21T14:55:46.23691500255-14:55:46 **** Incremental Build of configuration Emulation-SW for project pma ****
-000-make -j56 incremental 
-000-/tools/Xilinx/Vitis/2019.2/bin/v++ --target sw_emu --compile -I"../src" --config common-config.ini --config binary_container_1-bin_search-compile.ini -o"binary_container_1.build/bin_search.xo" "../src/kernel_binary_search.cpp"
-000-Option Map File Used: '/tools/Xilinx/Vitis/2019.2/data/vitis/vpp/optMap.xml'
-000-
-000-****** v++ v2019.2 (64-bit)
-000-  **** SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
-000-    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
-000-
-000-INFO: [v++ 60-1306] Additional information associated with this v++ compile can be found at:
-000-	Reports: /home/huao/Documents/pma_old/pma/Emulation-SW/binary_container_1.build/reports/bin_search
-000-	Log files: /home/huao/Documents/pma_old/pma/Emulation-SW/binary_container_1.build/logs/bin_search
-000-Running Dispatch Server on port:39709
-000-INFO: [v++ 60-1548] Creating build summary session with primary output /home/huao/Documents/pma_old/pma/Emulation-SW/binary_container_1.build/bin_search.xo.compile_summary, at Mon Jun 21 14:55:50 2021
-000-INFO: [v++ 60-1316] Initiating connection to rulecheck server, at Mon Jun 21 14:55:50 2021
-000-INFO: [v++ 60-895]   Target platform: /opt/xilinx/platforms/xilinx_u250_xdma_201830_2/xilinx_u250_xdma_201830_2.xpfm
-000-INFO: [v++ 60-1578]   This platform contains Device Support Archive '/opt/xilinx/platforms/xilinx_u250_xdma_201830_2/hw/xilinx_u250_xdma_201830_2.dsa'
-000-INFO: [v++ 60-585] Compiling for software emulation target
-000-INFO: [v++ 60-423]   Target device: xilinx_u250_xdma_201830_2
-000-INFO: [v++ 60-242] Creating kernel: 'bin_search'
-000-
-000-===>The following messages were generated while  performing high-level synthesis for kernel: bin_search Log file: /home/huao/Documents/pma_old/pma/Emulation-SW/binary_container_1.build/bin_search/bin_search/vivado_hls.log :
-000-INFO: [v++ 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
-000-INFO: [v++ 60-594] Finished kernel compilation
-000-INFO: [v++ 60-586] Created binary_container_1.build/bin_search.xo
-000-INFO: [v++ 60-791] Total elapsed time: 0h 0m 35s
-000-/tools/Xilinx/Vitis/2019.2/bin/v++ --target sw_emu --compile -I"../src" --config common-config.ini --config binary_container_1-process_leaf-compile.ini -o"binary_container_1.build/process_leaf.xo" "../src/kernel_process_leaf.cpp"
-000-Option Map File Used: '/tools/Xilinx/Vitis/2019.2/data/vitis/vpp/optMap.xml'
-000-
-000-****** v++ v2019.2 (64-bit)
-000-  **** SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
-000-    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
-000-
-000-INFO: [v++ 60-1306] Additional information associated with this v++ compile can be found at:
-000-	Reports: /home/huao/Documents/pma_old/pma/Emulation-SW/binary_container_1.build/reports/process_leaf
-000-	Log files: /home/huao/Documents/pma_old/pma/Emulation-SW/binary_container_1.build/logs/process_leaf
-000-Running Dispatch Server on port:43275
-000-INFO: [v++ 60-1548] Creating build summary session with primary output /home/huao/Documents/pma_old/pma/Emulation-SW/binary_container_1.build/process_leaf.xo.compile_summary, at Mon Jun 21 14:56:28 2021
-000-INFO: [v++ 60-1316] Initiating connection to rulecheck server, at Mon Jun 21 14:56:28 2021
-000-INFO: [v++ 60-895]   Target platform: /opt/xilinx/platforms/xilinx_u250_xdma_201830_2/xilinx_u250_xdma_201830_2.xpfm
-000-INFO: [v++ 60-1578]   This platform contains Device Support Archive '/opt/xilinx/platforms/xilinx_u250_xdma_201830_2/hw/xilinx_u250_xdma_201830_2.dsa'
-000-INFO: [v++ 60-585] Compiling for software emulation target
-000-INFO: [v++ 60-423]   Target device: xilinx_u250_xdma_201830_2
-000-INFO: [v++ 60-242] Creating kernel: 'process_leaf'
-000-
-000-===>The following messages were generated while  performing high-level synthesis for kernel: process_leaf Log file: /home/huao/Documents/pma_old/pma/Emulation-SW/binary_container_1.build/process_leaf/process_leaf/vivado_hls.log :
-000-INFO: [v++ 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
-000-INFO: [v++ 60-594] Finished kernel compilation
-000-INFO: [v++ 60-586] Created binary_container_1.build/process_leaf.xo
-000-INFO: [v++ 60-791] Total elapsed time: 0h 0m 35s
-000-/tools/Xilinx/Vitis/2019.2/bin/v++ --target sw_emu --link --config ../src/stream_connect.ini --config common-config.ini --config binary_container_1-link.ini -o"binary_container_1.xclbin" binary_container_1.build/bin_search.xo binary_container_1.build/dispatch.xo binary_container_1.build/process_leaf.xo binary_container_1.build/read_edges.xo
-000-Option Map File Used: '/tools/Xilinx/Vitis/2019.2/data/vitis/vpp/optMap.xml'
-000-
-000-****** v++ v2019.2 (64-bit)
-000-  **** SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
-000-    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
-000-
-000-INFO: [v++ 60-1306] Additional information associated with this v++ link can be found at:
-000-	Reports: /home/huao/Documents/pma_old/pma/Emulation-SW/binary_container_1.build/reports/link
-000-	Log files: /home/huao/Documents/pma_old/pma/Emulation-SW/binary_container_1.build/logs/link
-000-Running Dispatch Server on port:36559
-000-INFO: [v++ 60-1548] Creating build summary session with primary output /home/huao/Documents/pma_old/pma/Emulation-SW/binary_container_1.xclbin.link_summary, at Mon Jun 21 14:57:06 2021
-000-INFO: [v++ 60-1316] Initiating connection to rulecheck server, at Mon Jun 21 14:57:06 2021
-000-INFO: [v++ 60-895]   Target platform: /opt/xilinx/platforms/xilinx_u250_xdma_201830_2/xilinx_u250_xdma_201830_2.xpfm
-000-INFO: [v++ 60-1578]   This platform contains Device Support Archive '/opt/xilinx/platforms/xilinx_u250_xdma_201830_2/hw/xilinx_u250_xdma_201830_2.dsa'
-000-INFO: [v++ 60-629] Linking for software emulation target
-000-INFO: [v++ 60-423]   Target device: xilinx_u250_xdma_201830_2
-000-INFO: [v++ 60-645] kernel flags are '-g -I /home/huao/Documents/pma_old/pma/src -g'
-000-INFO: [v++ 60-645] kernel flags are '-g -I /home/huao/Documents/pma_old/pma/src -g'
-000-INFO: [v++ 60-645] kernel flags are '-g -I /home/huao/Documents/pma_old/pma/src -g'
-000-INFO: [v++ 60-645] kernel flags are '-g -I /home/huao/Documents/pma_old/pma/src -g'
-000-INFO: [v++ 60-586] Created binary_container_1.xclbin
-000-INFO: [v++ 60-1307] Run completed. Additional information can be found in:
-000-	Steps Log File: /home/huao/Documents/pma_old/pma/Emulation-SW/binary_container_1.build/logs/link/link.steps.log
-000-
-000-INFO: [v++ 60-791] Total elapsed time: 0h 0m 24s
-000-g++ -std=c++0x -DVITIS_PLATFORM=xilinx_u250_xdma_201830_2 -D__USE_XOPEN2K8 -I/opt/xilinx/xrt/include/ -I/tools/Xilinx/Vivado/2019.2/include/ -O0 -g -Wall -c -fmessage-length=0 -o "src/host.o" "../src/host.cpp"
-000-In file included from ../src/host.cpp:7:0:
-000-../src/pma_dynamic_graph.hpp: In constructor ‘pma_dynamic_graph::pma_dynamic_graph(int, long unsigned int*, size_t, long unsigned int*, size_t)’:
-000/pma/src/pma_dynamic_graph.hpp40-1-1comparison between signed and unsigned integer expressions [-Wsign-compare]1-../src/pma_dynamic_graph.hpp:40:30: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-000-         for (size_t i = 0; i < node_size; i++) {
-000-                            ~~^~~~~~~~~~~
-000/pma/src/pma_dynamic_graph.hpp59-1-1comparison between signed and unsigned integer expressions [-Wsign-compare]1-../src/pma_dynamic_graph.hpp:59:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-000-             if ((all_edges[i] >> 32) == cur_node) {
-000-                 ~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~
-000/pma/src/pma_dynamic_graph.hpp72-1-1format ‘%x’ expects argument of type ‘unsigned int’, but argument 2 has type ‘size_t {aka long unsigned int}’ [-Wformat=]1-../src/pma_dynamic_graph.hpp:72:59: warning: format ‘%x’ expects argument of type ‘unsigned int’, but argument 2 has type ‘size_t {aka long unsigned int}’ [-Wformat=]
-000-                 printf("error data[%x] == EMPTY\n", i * 16);
-000-                                                     ~~~~~~^
-000-g++ -o "pma" src/host.o -lxilinxopencl -lpthread -lrt -lstdc++ -lmpfr -lgmp -lhlsmc++-GCC46 -lIp_floating_point_v7_0_bitacc_cmodel -lIp_xfft_v9_1_bitacc_cmodel -lIp_fir_compiler_v7_2_bitacc_cmodel -lIp_dds_compiler_v6_0_bitacc_cmodel -L/opt/xilinx/xrt/lib/ -L/tools/Xilinx/Vivado/2019.2/lnx64/tools/fpo_v7_0 -L/tools/Xilinx/Vivado/2019.2/lnx64/lib/csim -L/tools/Xilinx/Vivado/2019.2/lnx64/tools/dds_v6_0 -L/tools/Xilinx/Vivado/2019.2/lnx64/tools/fir_v7_0 -L/tools/Xilinx/Vivado/2019.2/lnx64/tools/fft_v9_1 -Wl,-rpath-link,/opt/xilinx/xrt/lib -Wl,-rpath,/tools/Xilinx/Vivado/2019.2/lnx64/lib/csim -Wl,-rpath,/tools/Xilinx/Vivado/2019.2/lnx64/tools/fpo_v7_0 -Wl,-rpath,/tools/Xilinx/Vivado/2019.2/lnx64/tools/fft_v9_1 -Wl,-rpath,/tools/Xilinx/Vivado/2019.2/lnx64/tools/fir_v7_0 -Wl,-rpath,/tools/Xilinx/Vivado/2019.2/lnx64/tools/dds_v6_0
-00255-
-14:57:30 Build Finished (took 1m:43s.927ms)
-
