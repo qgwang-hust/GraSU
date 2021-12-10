@@ -1,0 +1,10 @@
+2021-06-22T16:38:00.64586100255-16:38:00 **** Clean-only build of configuration Hardware for project pma ****
+000-make -j56 clean 
+000-rm -f pma src/host.o
+000-rm -f binary_container_1.xclbin binary_container_1.build/bin_search.xo binary_container_1.build/dispatch.xo binary_container_1.build/process_leaf.xo binary_container_1.build/read_edges.xo binary_container_1.build/bin_search.mdb binary_container_1.build/dispatch.mdb binary_container_1.build/process_leaf.mdb binary_container_1.build/read_edges.mdb binary_container_1.mdb 
+000-rm -f *.xclbin.sh *.xclbin.info *.xclbin.link_summary*
+000-rm -rf binary_container_1.build binary_container_1.build binary_container_1.build binary_container_1.build src/
+000-rm -rf .Xil
+00255-
+16:38:00 Build Finished (took 171ms)
+
