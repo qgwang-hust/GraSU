@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="com.xilinx.opencl.launch.openCLLaunch">
+    <stringAttribute key="SDACCEL_DATA_TRANSFER_TRACE" value="coarse"/>
+    <booleanAttribute key="SDACCEL_ENABLE_PROFILE" value="true"/>
+    <stringAttribute key="SDACCEL_STALL_TRACE" value="off"/>
+    <stringAttribute key="SDACCEL_TIMELINE_REPORT_STRING" value="Default"/>
+    <booleanAttribute key="SDX_DO_BINARY_CONTAINERS_ARGS" value="false"/>
+    <booleanAttribute key="SDX_USE_DEFAULT_WORKING_DIR" value="true"/>
+    <stringAttribute key="TRACE_BUFFER_SIZE" value="1M"/>
+    <booleanAttribute key="com.xilinx.sdx.internal.opencl.language.ui.launch.ui.stop_at_kernal_start" value="true"/>
+    <booleanAttribute key="org.eclipse.cdt.dsf.gdb.AUTO_SOLIB" value="true"/>
+    <listAttribute key="org.eclipse.cdt.dsf.gdb.AUTO_SOLIB_LIST"/>
+    <stringAttribute key="org.eclipse.cdt.dsf.gdb.DEBUG_NAME" value="${env_var:XILINX_VITIS}/${env_var:RDI_PLATFORM}/tools/gdb/gdb-7.9.1/bin/gdb"/>
+    <booleanAttribute key="org.eclipse.cdt.dsf.gdb.DEBUG_ON_FORK" value="false"/>
+    <stringAttribute key="org.eclipse.cdt.dsf.gdb.GDB_INIT" value=".gdbinit"/>
+    <booleanAttribute key="org.eclipse.cdt.dsf.gdb.NON_STOP" value="false"/>
+    <booleanAttribute key="org.eclipse.cdt.dsf.gdb.REVERSE" value="false"/>
+    <stringAttribute key="org.eclipse.cdt.dsf.gdb.REVERSE_MODE" value="UseSoftTrace"/>
+    <listAttribute key="org.eclipse.cdt.dsf.gdb.SOLIB_PATH"/>
+    <stringAttribute key="org.eclipse.cdt.dsf.gdb.TRACEPOINT_MODE" value="TP_NORMAL_ONLY"/>
+    <booleanAttribute key="org.eclipse.cdt.dsf.gdb.UPDATE_THREADLIST_ON_SUSPEND" value="false"/>
+    <booleanAttribute key="org.eclipse.cdt.dsf.gdb.internal.ui.launching.LocalApplicationCDebuggerTab.DEFAULTS_SET" value="true"/>
+    <stringAttribute key="org.eclipse.cdt.launch.DEBUGGER_ID" value="gdb"/>
+    <stringAttribute key="org.eclipse.cdt.launch.DEBUGGER_START_MODE" value="run"/>
+    <booleanAttribute key="org.eclipse.cdt.launch.DEBUGGER_STOP_AT_MAIN" value="true"/>
+    <stringAttribute key="org.eclipse.cdt.launch.DEBUGGER_STOP_AT_MAIN_SYMBOL" value="main"/>
+    <stringAttribute key="org.eclipse.cdt.launch.PROGRAM_ARGUMENTS" value="../binary_container_1.xclbin&#10;/space1/huao_data/pma_dataset/sx-askubuntu.txt&#10;/space1/huao_data/pma_result_bak/sx-askubuntu.txt"/>
+    <stringAttribute key="org.eclipse.cdt.launch.PROGRAM_NAME" value="Hardware/pma"/>
+    <stringAttribute key="org.eclipse.cdt.launch.PROJECT_ATTR" value="pma"/>
+    <booleanAttribute key="org.eclipse.cdt.launch.PROJECT_BUILD_CONFIG_AUTO_ATTR" value="false"/>
+    <stringAttribute key="org.eclipse.cdt.launch.PROJECT_BUILD_CONFIG_ID_ATTR" value=""/>
+    <stringAttribute key="org.eclipse.cdt.launch.WORKING_DIRECTORY" value="${workspace_loc:pma}/Hardware/pma-Default"/>
+    <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+        <listEntry value="/pma"/>
+    </listAttribute>
+    <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+        <listEntry value="4"/>
+    </listAttribute>
+    <mapAttribute key="org.eclipse.debug.core.environmentVariables">
+        <mapEntry key="XILINX_OPENCL" value="${env_var:XILINX_VITIS}/"/>
+        <mapEntry key="XILINX_VITIS" value="${env_var:XILINX_VITIS}/"/>
+    </mapAttribute>
+    <stringAttribute key="org.eclipse.debug.ui.ATTR_CAPTURE_IN_FILE" value="${workspace_loc:/pma/Emulation-SW/pma-Default.launch.log}"/>
+    <stringAttribute key="process_factory_id" value="org.eclipse.cdt.dsf.gdb.GdbProcessFactory"/>
+</launchConfiguration>
