@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="ASCII"?>
+<openclProject:OpenCLProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:openclProject="http://www.xilinx.com/openclproject" name="pma" location="/home/huao/Documents/pma_old/pma" platform="/opt/xilinx/platforms/xilinx_u250_xdma_201830_2/xilinx_u250_xdma_201830_2.xpfm" platformUID="xilinx:u250:xdma:201830.2" systemProject="pma_system" sysConfig="config0_0" cpu="x86_0" os="linux">
+  <configuration name="Emulation-SW" id="com.xilinx.accelerated.config.sw_emu.47598359" dirty="true">
+    <configBuildOptions xsi:type="openclProject:OpenCLOptions" kernelDebug="true">
+      <binaryContainers name="binary_container_1" xoccOptions="--config ../src/stream_connect.ini">
+        <kernels name="bin_search" sourceFile="src/kernel_binary_search.cpp" numComputeUnits="4">
+          <computeUnits name="bin_search_1" slr="Auto">
+            <args name="binary" master="true" memory="Auto"/>
+            <args name="row_offset" master="true" memory="Auto"/>
+            <args name="size" memory=""/>
+            <args name="edge_stream" memory=""/>
+            <args name="segment_head_stream" memory=""/>
+          </computeUnits>
+          <computeUnits name="bin_search_2" slr="Auto">
+            <args name="binary" master="true" memory="Auto"/>
+            <args name="row_offset" master="true" memory="Auto"/>
+            <args name="size" memory=""/>
+            <args name="edge_stream" memory=""/>
+            <args name="segment_head_stream" memory=""/>
+          </computeUnits>
+          <computeUnits name="bin_search_3" slr="Auto">
+            <args name="binary" master="true" memory="Auto"/>
+            <args name="row_offset" master="true" memory="Auto"/>
+            <args name="size" memory=""/>
+            <args name="edge_stream" memory=""/>
+            <args name="segment_head_stream" memory=""/>
+          </computeUnits>
+          <computeUnits name="bin_search_4" slr="Auto">
+            <args name="binary" master="true" memory="Auto"/>
+            <args name="row_offset" master="true" memory="Auto"/>
+            <args name="size" memory=""/>
+            <args name="edge_stream" memory=""/>
+            <args name="segment_head_stream" memory=""/>
+          </computeUnits>
+          <args name="binary" master="true"/>
+          <args name="row_offset" master="true"/>
+          <args name="size"/>
+          <args name="edge_stream"/>
+          <args name="segment_head_stream"/>
+        </kernels>
+        <kernels name="dispatch" sourceFile="src/kernel_dispatch.cpp">
+          <computeUnits name="dispatch_1" slr="Auto">
+            <args name="size" memory=""/>
+            <args name="segment_head_stream_0" memory=""/>
+            <args name="segment_head_stream_1" memory=""/>
+            <args name="segment_head_stream_2" memory=""/>
+            <args name="segment_head_stream_3" memory=""/>
+            <args name="left_location_stream_0" memory=""/>
+            <args name="left_location_stream_1" memory=""/>
+            <args name="left_location_stream_2" memory=""/>
+            <args name="left_location_stream_3" memory=""/>
+          </computeUnits>
+          <args name="size"/>
+          <args name="segment_head_stream_0"/>
+          <args name="segment_head_stream_1"/>
+          <args name="segment_head_stream_2"/>
+          <args name="segment_head_stream_3"/>
+          <args name="left_location_stream_0"/>
+          <args name="left_location_stream_1"/>
+          <args name="left_location_stream_2"/>
+          <args name="left_location_stream_3"/>
+        </kernels>
+        <kernels name="process_leaf" sourceFile="src/kernel_process_leaf.cpp" numComputeUnits="4">
+          <computeUnits name="process_leaf_1" slr="Auto">
+            <args name="data" master="true" memory="Auto"/>
+            <args name="left_location_stream" memory=""/>
+          </computeUnits>
+          <computeUnits name="process_leaf_2" slr="Auto">
+            <args name="data" master="true" memory="Auto"/>
+            <args name="left_location_stream" memory=""/>
+          </computeUnits>
+          <computeUnits name="process_leaf_3" slr="Auto">
+            <args name="data" master="true" memory="Auto"/>
+            <args name="left_location_stream" memory=""/>
+          </computeUnits>
+          <computeUnits name="process_leaf_4" slr="Auto">
+            <args name="data" master="true" memory="Auto"/>
+            <args name="left_location_stream" memory=""/>
+          </computeUnits>
+          <args name="data" master="true"/>
+          <args name="left_location_stream"/>
+        </kernels>
+        <kernels name="read_edges" sourceFile="src/kernel_read_edges.cpp">
+          <computeUnits name="read_edges_1" slr="Auto">
+            <args name="edges" master="true" memory="Auto"/>
+            <args name="edge_size" memory=""/>
+            <args name="edge_stream_0" memory=""/>
+            <args name="edge_stream_1" memory=""/>
+            <args name="edge_stream_2" memory=""/>
+            <args name="edge_stream_3" memory=""/>
+          </computeUnits>
+          <args name="edges" master="true"/>
+          <args name="edge_size"/>
+          <args name="edge_stream_0"/>
+          <args name="edge_stream_1"/>
+          <args name="edge_stream_2"/>
+          <args name="edge_stream_3"/>
+        </kernels>
+      </binaryContainers>
+    </configBuildOptions>
+    <lastBuildOptions xsi:type="openclProject:OpenCLOptions" kernelDebug="true">
+      <binaryContainers name="binary_container_1" xoccOptions="--config ../src/stream_connect.ini">
+        <kernels name="bin_search" sourceFile="src/kernel_binary_search.cpp" numComputeUnits="4">
+          <computeUnits name="bin_search_1" slr="Auto">
+            <args name="binary" master="true" memory="Auto"/>
+            <args name="row_offset" master="true" memory="Auto"/>
+            <args name="size" memory=""/>
+            <args name="edge_stream" memory=""/>
+            <args name="segment_head_stream" memory=""/>
+          </computeUnits>
+          <computeUnits name="bin_search_2" slr="Auto">
+            <args name="binary" master="true" memory="Auto"/>
+            <args name="row_offset" master="true" memory="Auto"/>
+            <args name="size" memory=""/>
+            <args name="edge_stream" memory=""/>
+            <args name="segment_head_stream" memory=""/>
+          </computeUnits>
+          <computeUnits name="bin_search_3" slr="Auto">
+            <args name="binary" master="true" memory="Auto"/>
+            <args name="row_offset" master="true" memory="Auto"/>
+            <args name="size" memory=""/>
+            <args name="edge_stream" memory=""/>
+            <args name="segment_head_stream" memory=""/>
+          </computeUnits>
+          <computeUnits name="bin_search_4" slr="Auto">
+            <args name="binary" master="true" memory="Auto"/>
+            <args name="row_offset" master="true" memory="Auto"/>
+            <args name="size" memory=""/>
+            <args name="edge_stream" memory=""/>
+            <args name="segment_head_stream" memory=""/>
+          </computeUnits>
+          <args name="binary" master="true"/>
+          <args name="row_offset" master="true"/>
+          <args name="size"/>
+          <args name="edge_stream"/>
+          <args name="segment_head_stream"/>
+        </kernels>
+        <kernels name="dispatch" sourceFile="src/kernel_dispatch.cpp">
+          <computeUnits name="dispatch_1" slr="Auto">
+            <args name="size" memory=""/>
+            <args name="segment_head_stream_0" memory=""/>
+            <args name="segment_head_stream_1" memory=""/>
+            <args name="segment_head_stream_2" memory=""/>
+            <args name="segment_head_stream_3" memory=""/>
+            <args name="left_location_stream_0" memory=""/>
+            <args name="left_location_stream_1" memory=""/>
+            <args name="left_location_stream_2" memory=""/>
+            <args name="left_location_stream_3" memory=""/>
+          </computeUnits>
+          <args name="size"/>
+          <args name="segment_head_stream_0"/>
+          <args name="segment_head_stream_1"/>
+          <args name="segment_head_stream_2"/>
+          <args name="segment_head_stream_3"/>
+          <args name="left_location_stream_0"/>
+          <args name="left_location_stream_1"/>
+          <args name="left_location_stream_2"/>
+          <args name="left_location_stream_3"/>
+        </kernels>
+        <kernels name="process_leaf" sourceFile="src/kernel_process_leaf.cpp" numComputeUnits="4">
+          <computeUnits name="process_leaf_1" slr="Auto">
+            <args name="data" master="true" memory="Auto"/>
+            <args name="left_location_stream" memory=""/>
+          </computeUnits>
+          <computeUnits name="process_leaf_2" slr="Auto">
+            <args name="data" master="true" memory="Auto"/>
+            <args name="left_location_stream" memory=""/>
+          </computeUnits>
+          <computeUnits name="process_leaf_3" slr="Auto">
+            <args name="data" master="true" memory="Auto"/>
+            <args name="left_location_stream" memory=""/>
+          </computeUnits>
+          <computeUnits name="process_leaf_4" slr="Auto">
+            <args name="data" master="true" memory="Auto"/>
+            <args name="left_location_stream" memory=""/>
+          </computeUnits>
+          <args name="data" master="true"/>
+          <args name="left_location_stream"/>
+        </kernels>
+        <kernels name="read_edges" sourceFile="src/kernel_read_edges.cpp">
+          <computeUnits name="read_edges_1" slr="Auto">
+            <args name="edges" master="true" memory="Auto"/>
+            <args name="edge_size" memory=""/>
+            <args name="edge_stream_0" memory=""/>
+            <args name="edge_stream_1" memory=""/>
+            <args name="edge_stream_2" memory=""/>
+            <args name="edge_stream_3" memory=""/>
+          </computeUnits>
+          <args name="edges" master="true"/>
+          <args name="edge_size"/>
+          <args name="edge_stream_0"/>
+          <args name="edge_stream_1"/>
+          <args name="edge_stream_2"/>
+          <args name="edge_stream_3"/>
+        </kernels>
+      </binaryContainers>
+    </lastBuildOptions>
+  </configuration>
+  <configuration name="Emulation-HW" id="com.xilinx.accelerated.config.hw_emu.80467211" dirty="true">
+    <configBuildOptions xsi:type="openclProject:OpenCLOptions" kernelDebug="true" target="hw_emu">
+      <binaryContainers name="binary_container_1" xoccOptions="--config ../src/stream_connect.ini">
+        <kernels name="bin_search" sourceFile="src/kernel_binary_search.cpp" numComputeUnits="4">
+          <computeUnits name="bin_search_1" slr=""/>
+          <computeUnits name="bin_search_2" slr=""/>
+          <computeUnits name="bin_search_3" slr=""/>
+          <computeUnits name="bin_search_4" slr=""/>
+        </kernels>
+        <kernels name="dispatch" sourceFile="src/kernel_dispatch.cpp">
+          <computeUnits name="dispatch_1" slr=""/>
+        </kernels>
+        <kernels name="process_leaf" sourceFile="src/kernel_process_leaf.cpp" numComputeUnits="4">
+          <computeUnits name="process_leaf_1" slr=""/>
+          <computeUnits name="process_leaf_2" slr=""/>
+          <computeUnits name="process_leaf_3" slr=""/>
+          <computeUnits name="process_leaf_4" slr=""/>
+        </kernels>
+        <kernels name="read_edges" sourceFile="src/kernel_read_edges.cpp">
+          <computeUnits name="read_edges_1" slr=""/>
+        </kernels>
+      </binaryContainers>
+    </configBuildOptions>
+  </configuration>
+  <configuration name="Hardware" id="com.xilinx.accelerated.config.hw.1978901949" dirty="true">
+    <configBuildOptions xsi:type="openclProject:OpenCLOptions" target="hw">
+      <binaryContainers name="binary_container_1" xoccOptions="--config ../src/stream_connect.ini" traceMemory="FIFO:8K">
+        <kernels name="bin_search" sourceFile="src/kernel_binary_search.cpp" numComputeUnits="4">
+          <computeUnits name="bin_search_1" slr="SLR1">
+            <args name="binary" master="true" memory="DDR[1]"/>
+            <args name="row_offset" master="true" memory="DDR[1]"/>
+            <args name="size" memory=""/>
+            <args name="edge_stream" memory=""/>
+            <args name="segment_head_stream" memory=""/>
+          </computeUnits>
+          <computeUnits name="bin_search_2" slr="SLR1">
+            <args name="binary" master="true" memory="DDR[1]"/>
+            <args name="row_offset" master="true" memory="DDR[1]"/>
+            <args name="size" memory=""/>
+            <args name="edge_stream" memory=""/>
+            <args name="segment_head_stream" memory=""/>
+          </computeUnits>
+          <computeUnits name="bin_search_3" slr="SLR1">
+            <args name="binary" master="true" memory="DDR[1]"/>
+            <args name="row_offset" master="true" memory="DDR[1]"/>
+            <args name="size" memory=""/>
+            <args name="edge_stream" memory=""/>
+            <args name="segment_head_stream" memory=""/>
+          </computeUnits>
+          <computeUnits name="bin_search_4" slr="SLR1">
+            <args name="binary" master="true" memory="DDR[1]"/>
+            <args name="row_offset" master="true" memory="DDR[1]"/>
+            <args name="size" memory=""/>
+            <args name="edge_stream" memory=""/>
+            <args name="segment_head_stream" memory=""/>
+          </computeUnits>
+          <args name="binary" master="true"/>
+          <args name="row_offset" master="true"/>
+          <args name="size"/>
+          <args name="edge_stream"/>
+          <args name="segment_head_stream"/>
+        </kernels>
+        <kernels name="dispatch" sourceFile="src/kernel_dispatch.cpp">
+          <computeUnits name="dispatch_1" slr="SLR1">
+            <args name="size" memory=""/>
+            <args name="segment_head_stream_0" memory=""/>
+            <args name="segment_head_stream_1" memory=""/>
+            <args name="segment_head_stream_2" memory=""/>
+            <args name="segment_head_stream_3" memory=""/>
+            <args name="left_location_stream_0" memory=""/>
+            <args name="left_location_stream_1" memory=""/>
+            <args name="left_location_stream_2" memory=""/>
+            <args name="left_location_stream_3" memory=""/>
+          </computeUnits>
+          <args name="size"/>
+          <args name="segment_head_stream_0"/>
+          <args name="segment_head_stream_1"/>
+          <args name="segment_head_stream_2"/>
+          <args name="segment_head_stream_3"/>
+          <args name="left_location_stream_0"/>
+          <args name="left_location_stream_1"/>
+          <args name="left_location_stream_2"/>
+          <args name="left_location_stream_3"/>
+        </kernels>
+        <kernels name="process_leaf" sourceFile="src/kernel_process_leaf.cpp" numComputeUnits="4">
+          <computeUnits name="process_leaf_1" slr="SLR2">
+            <args name="data" master="true" memory="DDR[2]"/>
+            <args name="left_location_stream" memory=""/>
+          </computeUnits>
+          <computeUnits name="process_leaf_2" slr="SLR2">
+            <args name="data" master="true" memory="DDR[2]"/>
+            <args name="left_location_stream" memory=""/>
+          </computeUnits>
+          <computeUnits name="process_leaf_3" slr="SLR2">
+            <args name="data" master="true" memory="DDR[2]"/>
+            <args name="left_location_stream" memory=""/>
+          </computeUnits>
+          <computeUnits name="process_leaf_4" slr="SLR2">
+            <args name="data" master="true" memory="DDR[2]"/>
+            <args name="left_location_stream" memory=""/>
+          </computeUnits>
+          <args name="data" master="true"/>
+          <args name="left_location_stream"/>
+        </kernels>
+        <kernels name="read_edges" sourceFile="src/kernel_read_edges.cpp">
+          <computeUnits name="read_edges_1" slr="SLR0">
+            <args name="edges" master="true" memory="DDR[0]"/>
+            <args name="edge_size" memory=""/>
+            <args name="edge_stream_0" memory=""/>
+            <args name="edge_stream_1" memory=""/>
+            <args name="edge_stream_2" memory=""/>
+            <args name="edge_stream_3" memory=""/>
+          </computeUnits>
+          <args name="edges" master="true"/>
+          <args name="edge_size"/>
+          <args name="edge_stream_0"/>
+          <args name="edge_stream_1"/>
+          <args name="edge_stream_2"/>
+          <args name="edge_stream_3"/>
+        </kernels>
+      </binaryContainers>
+    </configBuildOptions>
+    <lastBuildOptions xsi:type="openclProject:OpenCLOptions" target="hw">
+      <binaryContainers name="binary_container_1" xoccOptions="--config ../src/stream_connect.ini" traceMemory="FIFO:8K">
+        <kernels name="bin_search" sourceFile="src/kernel_binary_search.cpp" numComputeUnits="4">
+          <computeUnits name="bin_search_1" slr="SLR1">
+            <args name="binary" master="true" memory="DDR[1]"/>
+            <args name="row_offset" master="true" memory="DDR[1]"/>
+            <args name="size" memory=""/>
+            <args name="edge_stream" memory=""/>
+            <args name="segment_head_stream" memory=""/>
+          </computeUnits>
+          <computeUnits name="bin_search_2" slr="SLR1">
+            <args name="binary" master="true" memory="DDR[1]"/>
+            <args name="row_offset" master="true" memory="DDR[1]"/>
+            <args name="size" memory=""/>
+            <args name="edge_stream" memory=""/>
+            <args name="segment_head_stream" memory=""/>
+          </computeUnits>
+          <computeUnits name="bin_search_3" slr="SLR1">
+            <args name="binary" master="true" memory="DDR[1]"/>
+            <args name="row_offset" master="true" memory="DDR[1]"/>
+            <args name="size" memory=""/>
+            <args name="edge_stream" memory=""/>
+            <args name="segment_head_stream" memory=""/>
+          </computeUnits>
+          <computeUnits name="bin_search_4" slr="SLR1">
+            <args name="binary" master="true" memory="DDR[1]"/>
+            <args name="row_offset" master="true" memory="DDR[1]"/>
+            <args name="size" memory=""/>
+            <args name="edge_stream" memory=""/>
+            <args name="segment_head_stream" memory=""/>
+          </computeUnits>
+          <args name="binary" master="true"/>
+          <args name="row_offset" master="true"/>
+          <args name="size"/>
+          <args name="edge_stream"/>
+          <args name="segment_head_stream"/>
+        </kernels>
+        <kernels name="dispatch" sourceFile="src/kernel_dispatch.cpp">
+          <computeUnits name="dispatch_1" slr="SLR1">
+            <args name="size" memory=""/>
+            <args name="segment_head_stream_0" memory=""/>
+            <args name="segment_head_stream_1" memory=""/>
+            <args name="segment_head_stream_2" memory=""/>
+            <args name="segment_head_stream_3" memory=""/>
+            <args name="left_location_stream_0" memory=""/>
+            <args name="left_location_stream_1" memory=""/>
+            <args name="left_location_stream_2" memory=""/>
+            <args name="left_location_stream_3" memory=""/>
+          </computeUnits>
+          <args name="size"/>
+          <args name="segment_head_stream_0"/>
+          <args name="segment_head_stream_1"/>
+          <args name="segment_head_stream_2"/>
+          <args name="segment_head_stream_3"/>
+          <args name="left_location_stream_0"/>
+          <args name="left_location_stream_1"/>
+          <args name="left_location_stream_2"/>
+          <args name="left_location_stream_3"/>
+        </kernels>
+        <kernels name="process_leaf" sourceFile="src/kernel_process_leaf.cpp" numComputeUnits="4">
+          <computeUnits name="process_leaf_1" slr="SLR2">
+            <args name="data" master="true" memory="DDR[2]"/>
+            <args name="left_location_stream" memory=""/>
+          </computeUnits>
+          <computeUnits name="process_leaf_2" slr="SLR2">
+            <args name="data" master="true" memory="DDR[2]"/>
+            <args name="left_location_stream" memory=""/>
+          </computeUnits>
+          <computeUnits name="process_leaf_3" slr="SLR2">
+            <args name="data" master="true" memory="DDR[2]"/>
+            <args name="left_location_stream" memory=""/>
+          </computeUnits>
+          <computeUnits name="process_leaf_4" slr="SLR2">
+            <args name="data" master="true" memory="DDR[2]"/>
+            <args name="left_location_stream" memory=""/>
+          </computeUnits>
+          <args name="data" master="true"/>
+          <args name="left_location_stream"/>
+        </kernels>
+        <kernels name="read_edges" sourceFile="src/kernel_read_edges.cpp">
+          <computeUnits name="read_edges_1" slr="SLR0">
+            <args name="edges" master="true" memory="DDR[0]"/>
+            <args name="edge_size" memory=""/>
+            <args name="edge_stream_0" memory=""/>
+            <args name="edge_stream_1" memory=""/>
+            <args name="edge_stream_2" memory=""/>
+            <args name="edge_stream_3" memory=""/>
+          </computeUnits>
+          <args name="edges" master="true"/>
+          <args name="edge_size"/>
+          <args name="edge_stream_0"/>
+          <args name="edge_stream_1"/>
+          <args name="edge_stream_2"/>
+          <args name="edge_stream_3"/>
+        </kernels>
+      </binaryContainers>
+    </lastBuildOptions>
+  </configuration>
+</openclProject:OpenCLProject>
