@@ -1,4 +1,4 @@
-![logo](GraSU_free-file.png)
+![logo](GraSU_free-file.png){:height="50%" width="50%"}
 
 # GraSU: A Fast Graph Update Library for FPGA-based Dynamic Graph Processing
 
@@ -14,18 +14,9 @@ If you use GraSU, please cite our reearch paper published at FPGA 2021.
 
 ```javascript
 @inproceedings{DBLP:conf/fpga/Wang00YGL0JM21,
-  author    = {Qinggang Wang and
-               Long Zheng and
-               Yu Huang and
-               Pengcheng Yao and
-               Chuangyi Gui and
-               Xiaofei Liao and
-               Hai Jin and
-               Wenbin Jiang and
-               Fubing Mao},
+  author    = {Qinggang Wang and Long Zheng and Yu Huang and Pengcheng Yao and Chuangyi Gui and Xiaofei Liao and Hai Jin and Wenbin Jiang and Fubing Mao},
   title     = {GraSU: A Fast Graph Update Library for FPGA-based Dynamic Graph Processing},
-  booktitle = {Proceedings of the 2021 ACM/SIGDA International Symposium on Field
-               Programmable Gate Arrays (FPGA'21)},
+  booktitle = {Proceedings of the 2021 ACM/SIGDA International Symposium on Field Programmable Gate Arrays (FPGA'21)},
   pages     = {149--159},
   publisher = {ACM},
   year      = {2021},
