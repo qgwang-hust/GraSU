@@ -121,6 +121,23 @@ void process(
     #pragma HLS bind_storage variable=pma_cache_E type=RAM_1P impl=URAM
     #pragma HLS bind_storage variable=pma_cache_F type=RAM_1P impl=URAM
 
+//	#pragma HLS RESOURCE variable=pma_cache_0 core=XPM_MEMORY uram
+//	#pragma HLS RESOURCE variable=pma_cache_1 core=XPM_MEMORY uram
+//	#pragma HLS RESOURCE variable=pma_cache_2 core=XPM_MEMORY uram
+//	#pragma HLS RESOURCE variable=pma_cache_3 core=XPM_MEMORY uram
+//	#pragma HLS RESOURCE variable=pma_cache_4 core=XPM_MEMORY uram
+//	#pragma HLS RESOURCE variable=pma_cache_5 core=XPM_MEMORY uram
+//	#pragma HLS RESOURCE variable=pma_cache_6 core=XPM_MEMORY uram
+//	#pragma HLS RESOURCE variable=pma_cache_7 core=XPM_MEMORY uram
+//	#pragma HLS RESOURCE variable=pma_cache_8 core=XPM_MEMORY uram
+//	#pragma HLS RESOURCE variable=pma_cache_9 core=XPM_MEMORY uram
+//	#pragma HLS RESOURCE variable=pma_cache_A core=XPM_MEMORY uram
+//	#pragma HLS RESOURCE variable=pma_cache_B core=XPM_MEMORY uram
+//	#pragma HLS RESOURCE variable=pma_cache_C core=XPM_MEMORY uram
+//	#pragma HLS RESOURCE variable=pma_cache_D core=XPM_MEMORY uram
+//	#pragma HLS RESOURCE variable=pma_cache_E core=XPM_MEMORY uram
+//	#pragma HLS RESOURCE variable=pma_cache_F core=XPM_MEMORY uram
+
     load_cache:
     for (int i = 0; i < (MAX_CACHE_SEGMENT >> UPDATE_STREAM_CACHE_COUNT_LOG); i++) {
         #pragma HLS PIPELINE II=16

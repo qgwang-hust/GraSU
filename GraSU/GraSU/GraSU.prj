@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="ASCII"?>
+<hostApp:AcceleratedHostProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:hostApp="http://www.xilinx.com/acceleration/hostApplication" name="GraSU" location="/home/huao/code/GraSU/GraSU/GraSU" platform="/opt/xilinx/platforms/xilinx_u250_gen3x16_xdma_3_1_202020_1/xilinx_u250_gen3x16_xdma_3_1_202020_1.xpfm" platformUID="xilinx:u250:gen3x16_xdma_3_1:202020.1" systemProject="GraSU_system" sysConfig="config0_0" cpu="x86" cpuInstance="x86" os="Linux">
+  <configuration name="Emulation-SW" id="com.xilinx.ide.accel.config.sw_emu.x86.2009331632" dirty="true">
+    <configBuildOptions xsi:type="hostApp:HostApplicationOptions"/>
+  </configuration>
+  <configuration name="Emulation-HW" id="com.xilinx.ide.accel.config.hw_emu.x86.1054863899" dirty="true">
+    <configBuildOptions xsi:type="hostApp:HostApplicationOptions" target="hw_emu"/>
+    <lastBuildOptions xsi:type="hostApp:HostApplicationOptions" target="hw_emu"/>
+  </configuration>
+  <configuration name="Hardware" id="com.xilinx.ide.accel.config.hw.x86.1119181950">
+    <configBuildOptions xsi:type="hostApp:HostApplicationOptions" target="hw"/>
+    <lastBuildOptions xsi:type="hostApp:HostApplicationOptions" target="hw"/>
+  </configuration>
+</hostApp:AcceleratedHostProject>

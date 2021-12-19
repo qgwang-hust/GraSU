@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="ASCII"?>
+<hwlink:HwLinkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:hwlink="http://www.xilinx.com/acceleration/hwlink" name="GraSU_system_hw_link" platform="/opt/xilinx/platforms/xilinx_u250_gen3x16_xdma_3_1_202020_1/xilinx_u250_gen3x16_xdma_3_1_202020_1.xpfm" systemProject="GraSU_system" cpu="pl">
+  <configuration name="Emulation-SW" id="com.xilinx.ide.accel.config.hwlink.sw_emu.1198050484">
+    <configBuildOptions xsi:type="hwlink:LinkOptions">
+      <binaryContainers name="binary_container_1" xoccOptions="--kernel_frequency 200">
+        <kernels name="bin_search" projectName="GraSU_kernels" numComputeUnits="4">
+          <computeUnits name="bin_search_1" slr="SLR0">
+            <args name="edges" master="true" memory="DDR[0]"/>
+            <args name="binary_0" master="true" memory="DDR[0]"/>
+            <args name="binary_1" master="true" memory="DDR[0]"/>
+            <args name="binary_2" master="true" memory="DDR[0]"/>
+            <args name="binary_3" master="true" memory="DDR[0]"/>
+            <args name="row_offset_0" master="true" memory="DDR[0]"/>
+            <args name="row_offset_1" master="true" memory="DDR[0]"/>
+            <args name="row_offset_2" master="true" memory="DDR[0]"/>
+            <args name="row_offset_3" master="true" memory="DDR[0]"/>
+            <args name="edge_size"/>
+            <args name="segment_head_stream_out"/>
+          </computeUnits>
+          <computeUnits name="bin_search_2" slr="SLR1">
+            <args name="edges" master="true" memory="DDR[1]"/>
+            <args name="binary_0" master="true" memory="DDR[1]"/>
+            <args name="binary_1" master="true" memory="DDR[1]"/>
+            <args name="binary_2" master="true" memory="DDR[1]"/>
+            <args name="binary_3" master="true" memory="DDR[1]"/>
+            <args name="row_offset_0" master="true" memory="DDR[1]"/>
+            <args name="row_offset_1" master="true" memory="DDR[1]"/>
+            <args name="row_offset_2" master="true" memory="DDR[1]"/>
+            <args name="row_offset_3" master="true" memory="DDR[1]"/>
+            <args name="edge_size"/>
+            <args name="segment_head_stream_out"/>
+          </computeUnits>
+          <computeUnits name="bin_search_3" slr="SLR2">
+            <args name="edges" master="true" memory="DDR[2]"/>
+            <args name="binary_0" master="true" memory="DDR[2]"/>
+            <args name="binary_1" master="true" memory="DDR[2]"/>
+            <args name="binary_2" master="true" memory="DDR[2]"/>
+            <args name="binary_3" master="true" memory="DDR[2]"/>
+            <args name="row_offset_0" master="true" memory="DDR[2]"/>
+            <args name="row_offset_1" master="true" memory="DDR[2]"/>
+            <args name="row_offset_2" master="true" memory="DDR[2]"/>
+            <args name="row_offset_3" master="true" memory="DDR[2]"/>
+            <args name="edge_size"/>
+            <args name="segment_head_stream_out"/>
+          </computeUnits>
+          <computeUnits name="bin_search_4" slr="SLR3">
+            <args name="edges" master="true" memory="DDR[3]"/>
+            <args name="binary_0" master="true" memory="DDR[3]"/>
+            <args name="binary_1" master="true" memory="DDR[3]"/>
+            <args name="binary_2" master="true" memory="DDR[3]"/>
+            <args name="binary_3" master="true" memory="DDR[3]"/>
+            <args name="row_offset_0" master="true" memory="DDR[3]"/>
+            <args name="row_offset_1" master="true" memory="DDR[3]"/>
+            <args name="row_offset_2" master="true" memory="DDR[3]"/>
+            <args name="row_offset_3" master="true" memory="DDR[3]"/>
+            <args name="edge_size"/>
+            <args name="segment_head_stream_out"/>
+          </computeUnits>
+        </kernels>
+        <kernels name="dispatch" projectName="GraSU_kernels">
+          <computeUnits name="dispatch_1" slr="SLR1">
+            <args name="size"/>
+            <args name="segment_head_stream_1"/>
+            <args name="segment_head_stream_2"/>
+            <args name="segment_head_stream_3"/>
+            <args name="segment_head_stream_4"/>
+            <args name="dispatch_to_process_cache_1"/>
+            <args name="dispatch_to_process_cache_2"/>
+            <args name="dispatch_to_process_ddr_1"/>
+            <args name="dispatch_to_process_ddr_2"/>
+          </computeUnits>
+        </kernels>
+        <kernels name="process_cache" projectName="GraSU_kernels" numComputeUnits="2">
+          <computeUnits name="process_cache_1" slr="SLR0">
+            <args name="pma_cache" master="true" memory="DDR[0]"/>
+            <args name="update_stream"/>
+          </computeUnits>
+          <computeUnits name="process_cache_2" slr="SLR2">
+            <args name="pma_cache" master="true" memory="DDR[2]"/>
+            <args name="update_stream"/>
+          </computeUnits>
+        </kernels>
+        <kernels name="process_ddr" projectName="GraSU_kernels" numComputeUnits="2">
+          <computeUnits name="process_ddr_1" slr="SLR1">
+            <args name="pma_in0_ddr" master="true" memory="DDR[1]"/>
+            <args name="pma_in1_ddr" master="true" memory="DDR[1]"/>
+            <args name="pma_out0_ddr" master="true" memory="DDR[1]"/>
+            <args name="pma_out1_ddr" master="true" memory="DDR[1]"/>
+            <args name="update_stream"/>
+          </computeUnits>
+          <computeUnits name="process_ddr_2" slr="SLR3">
+            <args name="pma_in0_ddr" master="true" memory="DDR[3]"/>
+            <args name="pma_in1_ddr" master="true" memory="DDR[3]"/>
+            <args name="pma_out0_ddr" master="true" memory="DDR[3]"/>
+            <args name="pma_out1_ddr" master="true" memory="DDR[3]"/>
+            <args name="update_stream"/>
+          </computeUnits>
+        </kernels>
+      </binaryContainers>
+    </configBuildOptions>
+  </configuration>
+  <configuration name="Emulation-HW" id="com.xilinx.ide.accel.config.hwlink.hw_emu.182565913">
+    <configBuildOptions xsi:type="hwlink:LinkOptions" target="hw_emu">
+      <binaryContainers name="GraSU" xoccOptions="--config stream_connect.ini --kernel_frequency 200" traceMemory="FIFO:8K">
+        <kernels name="bin_search" projectName="GraSU_kernels" numComputeUnits="4">
+          <computeUnits name="bin_search_1" slr="SLR0">
+            <args name="edges" master="true" memory="DDR[0]"/>
+            <args name="binary_0" master="true" memory="DDR[0]"/>
+            <args name="binary_1" master="true" memory="DDR[0]"/>
+            <args name="binary_2" master="true" memory="DDR[0]"/>
+            <args name="binary_3" master="true" memory="DDR[0]"/>
+            <args name="row_offset_0" master="true" memory="DDR[0]"/>
+            <args name="row_offset_1" master="true" memory="DDR[0]"/>
+            <args name="row_offset_2" master="true" memory="DDR[0]"/>
+            <args name="row_offset_3" master="true" memory="DDR[0]"/>
+            <args name="edge_size"/>
+            <args name="segment_head_stream_out"/>
+          </computeUnits>
+          <computeUnits name="bin_search_2" slr="SLR1">
+            <args name="edges" master="true" memory="DDR[1]"/>
+            <args name="binary_0" master="true" memory="DDR[1]"/>
+            <args name="binary_1" master="true" memory="DDR[1]"/>
+            <args name="binary_2" master="true" memory="DDR[1]"/>
+            <args name="binary_3" master="true" memory="DDR[1]"/>
+            <args name="row_offset_0" master="true" memory="DDR[1]"/>
+            <args name="row_offset_1" master="true" memory="DDR[1]"/>
+            <args name="row_offset_2" master="true" memory="DDR[1]"/>
+            <args name="row_offset_3" master="true" memory="DDR[1]"/>
+            <args name="edge_size"/>
+            <args name="segment_head_stream_out"/>
+          </computeUnits>
+          <computeUnits name="bin_search_3" slr="SLR2">
+            <args name="edges" master="true" memory="DDR[2]"/>
+            <args name="binary_0" master="true" memory="DDR[2]"/>
+            <args name="binary_1" master="true" memory="DDR[2]"/>
+            <args name="binary_2" master="true" memory="DDR[2]"/>
+            <args name="binary_3" master="true" memory="DDR[2]"/>
+            <args name="row_offset_0" master="true" memory="DDR[2]"/>
+            <args name="row_offset_1" master="true" memory="DDR[2]"/>
+            <args name="row_offset_2" master="true" memory="DDR[2]"/>
+            <args name="row_offset_3" master="true" memory="DDR[2]"/>
+            <args name="edge_size"/>
+            <args name="segment_head_stream_out"/>
+          </computeUnits>
+          <computeUnits name="bin_search_4" slr="SLR3">
+            <args name="edges" master="true" memory="DDR[3]"/>
+            <args name="binary_0" master="true" memory="DDR[3]"/>
+            <args name="binary_1" master="true" memory="DDR[3]"/>
+            <args name="binary_2" master="true" memory="DDR[3]"/>
+            <args name="binary_3" master="true" memory="DDR[3]"/>
+            <args name="row_offset_0" master="true" memory="DDR[3]"/>
+            <args name="row_offset_1" master="true" memory="DDR[3]"/>
+            <args name="row_offset_2" master="true" memory="DDR[3]"/>
+            <args name="row_offset_3" master="true" memory="DDR[3]"/>
+            <args name="edge_size"/>
+            <args name="segment_head_stream_out"/>
+          </computeUnits>
+        </kernels>
+        <kernels name="dispatch" projectName="GraSU_kernels">
+          <computeUnits name="dispatch_1" slr="SLR1">
+            <args name="size"/>
+            <args name="segment_head_stream_1"/>
+            <args name="segment_head_stream_2"/>
+            <args name="segment_head_stream_3"/>
+            <args name="segment_head_stream_4"/>
+            <args name="dispatch_to_process_cache_1"/>
+            <args name="dispatch_to_process_cache_2"/>
+            <args name="dispatch_to_process_ddr_1"/>
+            <args name="dispatch_to_process_ddr_2"/>
+          </computeUnits>
+        </kernels>
+        <kernels name="process_cache" projectName="GraSU_kernels" numComputeUnits="2">
+          <computeUnits name="process_cache_1" slr="SLR0">
+            <args name="pma_cache" master="true" memory="DDR[0]"/>
+            <args name="update_stream"/>
+          </computeUnits>
+          <computeUnits name="process_cache_2" slr="SLR2">
+            <args name="pma_cache" master="true" memory="DDR[2]"/>
+            <args name="update_stream"/>
+          </computeUnits>
+        </kernels>
+        <kernels name="process_ddr" projectName="GraSU_kernels" numComputeUnits="2">
+          <computeUnits name="process_ddr_1" slr="SLR1">
+            <args name="pma_in0_ddr" master="true" memory="DDR[1]"/>
+            <args name="pma_in1_ddr" master="true" memory="DDR[1]"/>
+            <args name="pma_out0_ddr" master="true" memory="DDR[1]"/>
+            <args name="pma_out1_ddr" master="true" memory="DDR[1]"/>
+            <args name="update_stream"/>
+          </computeUnits>
+          <computeUnits name="process_ddr_2" slr="SLR3">
+            <args name="pma_in0_ddr" master="true" memory="DDR[3]"/>
+            <args name="pma_in1_ddr" master="true" memory="DDR[3]"/>
+            <args name="pma_out0_ddr" master="true" memory="DDR[3]"/>
+            <args name="pma_out1_ddr" master="true" memory="DDR[3]"/>
+            <args name="update_stream"/>
+          </computeUnits>
+        </kernels>
+      </binaryContainers>
+    </configBuildOptions>
+    <lastBuildOptions xsi:type="hwlink:LinkOptions" target="hw_emu">
+      <binaryContainers name="GraSU" xoccOptions="--config stream_connect.ini --kernel_frequency 200" traceMemory="FIFO:8K">
+        <kernels name="bin_search" projectName="GraSU_kernels" numComputeUnits="4">
+          <computeUnits name="bin_search_1" slr="SLR0">
+            <args name="edges" master="true" memory="DDR[0]"/>
+            <args name="binary_0" master="true" memory="DDR[0]"/>
+            <args name="binary_1" master="true" memory="DDR[0]"/>
+            <args name="binary_2" master="true" memory="DDR[0]"/>
+            <args name="binary_3" master="true" memory="DDR[0]"/>
+            <args name="row_offset_0" master="true" memory="DDR[0]"/>
+            <args name="row_offset_1" master="true" memory="DDR[0]"/>
+            <args name="row_offset_2" master="true" memory="DDR[0]"/>
+            <args name="row_offset_3" master="true" memory="DDR[0]"/>
+            <args name="edge_size"/>
+            <args name="segment_head_stream_out"/>
+          </computeUnits>
+          <computeUnits name="bin_search_2" slr="SLR1">
+            <args name="edges" master="true" memory="DDR[1]"/>
+            <args name="binary_0" master="true" memory="DDR[1]"/>
+            <args name="binary_1" master="true" memory="DDR[1]"/>
+            <args name="binary_2" master="true" memory="DDR[1]"/>
+            <args name="binary_3" master="true" memory="DDR[1]"/>
+            <args name="row_offset_0" master="true" memory="DDR[1]"/>
+            <args name="row_offset_1" master="true" memory="DDR[1]"/>
+            <args name="row_offset_2" master="true" memory="DDR[1]"/>
+            <args name="row_offset_3" master="true" memory="DDR[1]"/>
+            <args name="edge_size"/>
+            <args name="segment_head_stream_out"/>
+          </computeUnits>
+          <computeUnits name="bin_search_3" slr="SLR2">
+            <args name="edges" master="true" memory="DDR[2]"/>
+            <args name="binary_0" master="true" memory="DDR[2]"/>
+            <args name="binary_1" master="true" memory="DDR[2]"/>
+            <args name="binary_2" master="true" memory="DDR[2]"/>
+            <args name="binary_3" master="true" memory="DDR[2]"/>
+            <args name="row_offset_0" master="true" memory="DDR[2]"/>
+            <args name="row_offset_1" master="true" memory="DDR[2]"/>
+            <args name="row_offset_2" master="true" memory="DDR[2]"/>
+            <args name="row_offset_3" master="true" memory="DDR[2]"/>
+            <args name="edge_size"/>
+            <args name="segment_head_stream_out"/>
+          </computeUnits>
+          <computeUnits name="bin_search_4" slr="SLR3">
+            <args name="edges" master="true" memory="DDR[3]"/>
+            <args name="binary_0" master="true" memory="DDR[3]"/>
+            <args name="binary_1" master="true" memory="DDR[3]"/>
+            <args name="binary_2" master="true" memory="DDR[3]"/>
+            <args name="binary_3" master="true" memory="DDR[3]"/>
+            <args name="row_offset_0" master="true" memory="DDR[3]"/>
+            <args name="row_offset_1" master="true" memory="DDR[3]"/>
+            <args name="row_offset_2" master="true" memory="DDR[3]"/>
+            <args name="row_offset_3" master="true" memory="DDR[3]"/>
+            <args name="edge_size"/>
+            <args name="segment_head_stream_out"/>
+          </computeUnits>
+        </kernels>
+        <kernels name="dispatch" projectName="GraSU_kernels">
+          <computeUnits name="dispatch_1" slr="SLR1">
+            <args name="size"/>
+            <args name="segment_head_stream_1"/>
+            <args name="segment_head_stream_2"/>
+            <args name="segment_head_stream_3"/>
+            <args name="segment_head_stream_4"/>
+            <args name="dispatch_to_process_cache_1"/>
+            <args name="dispatch_to_process_cache_2"/>
+            <args name="dispatch_to_process_ddr_1"/>
+            <args name="dispatch_to_process_ddr_2"/>
+          </computeUnits>
+        </kernels>
+        <kernels name="process_cache" projectName="GraSU_kernels" numComputeUnits="2">
+          <computeUnits name="process_cache_1" slr="SLR0">
+            <args name="pma_cache" master="true" memory="DDR[0]"/>
+            <args name="update_stream"/>
+          </computeUnits>
+          <computeUnits name="process_cache_2" slr="SLR2">
+            <args name="pma_cache" master="true" memory="DDR[2]"/>
+            <args name="update_stream"/>
+          </computeUnits>
+        </kernels>
+        <kernels name="process_ddr" projectName="GraSU_kernels" numComputeUnits="2">
+          <computeUnits name="process_ddr_1" slr="SLR1">
+            <args name="pma_in0_ddr" master="true" memory="DDR[1]"/>
+            <args name="pma_in1_ddr" master="true" memory="DDR[1]"/>
+            <args name="pma_out0_ddr" master="true" memory="DDR[1]"/>
+            <args name="pma_out1_ddr" master="true" memory="DDR[1]"/>
+            <args name="update_stream"/>
+          </computeUnits>
+          <computeUnits name="process_ddr_2" slr="SLR3">
+            <args name="pma_in0_ddr" master="true" memory="DDR[3]"/>
+            <args name="pma_in1_ddr" master="true" memory="DDR[3]"/>
+            <args name="pma_out0_ddr" master="true" memory="DDR[3]"/>
+            <args name="pma_out1_ddr" master="true" memory="DDR[3]"/>
+            <args name="update_stream"/>
+          </computeUnits>
+        </kernels>
+      </binaryContainers>
+    </lastBuildOptions>
+  </configuration>
+  <configuration name="Hardware" id="com.xilinx.ide.accel.config.hwlink.hw.1523123383">
+    <configBuildOptions xsi:type="hwlink:LinkOptions" target="hw">
+      <binaryContainers name="GraSU" xoccOptions="--config stream_connect.ini --kernel_frequency 200" traceMemory="FIFO:8K">
+        <kernels name="bin_search" projectName="GraSU_kernels" numComputeUnits="4">
+          <computeUnits name="bin_search_1" slr="SLR0">
+            <args name="edges" master="true" memory="DDR[0]"/>
+            <args name="binary_0" master="true" memory="DDR[0]"/>
+            <args name="binary_1" master="true" memory="DDR[0]"/>
+            <args name="binary_2" master="true" memory="DDR[0]"/>
+            <args name="binary_3" master="true" memory="DDR[0]"/>
+            <args name="row_offset_0" master="true" memory="DDR[0]"/>
+            <args name="row_offset_1" master="true" memory="DDR[0]"/>
+            <args name="row_offset_2" master="true" memory="DDR[0]"/>
+            <args name="row_offset_3" master="true" memory="DDR[0]"/>
+            <args name="edge_size"/>
+            <args name="segment_head_stream_out"/>
+          </computeUnits>
+          <computeUnits name="bin_search_2" slr="SLR1">
+            <args name="edges" master="true" memory="DDR[1]"/>
+            <args name="binary_0" master="true" memory="DDR[1]"/>
+            <args name="binary_1" master="true" memory="DDR[1]"/>
+            <args name="binary_2" master="true" memory="DDR[1]"/>
+            <args name="binary_3" master="true" memory="DDR[1]"/>
+            <args name="row_offset_0" master="true" memory="DDR[1]"/>
+            <args name="row_offset_1" master="true" memory="DDR[1]"/>
+            <args name="row_offset_2" master="true" memory="DDR[1]"/>
+            <args name="row_offset_3" master="true" memory="DDR[1]"/>
+            <args name="edge_size"/>
+            <args name="segment_head_stream_out"/>
+          </computeUnits>
+          <computeUnits name="bin_search_3" slr="SLR2">
+            <args name="edges" master="true" memory="DDR[2]"/>
+            <args name="binary_0" master="true" memory="DDR[2]"/>
+            <args name="binary_1" master="true" memory="DDR[2]"/>
+            <args name="binary_2" master="true" memory="DDR[2]"/>
+            <args name="binary_3" master="true" memory="DDR[2]"/>
+            <args name="row_offset_0" master="true" memory="DDR[2]"/>
+            <args name="row_offset_1" master="true" memory="DDR[2]"/>
+            <args name="row_offset_2" master="true" memory="DDR[2]"/>
+            <args name="row_offset_3" master="true" memory="DDR[2]"/>
+            <args name="edge_size"/>
+            <args name="segment_head_stream_out"/>
+          </computeUnits>
+          <computeUnits name="bin_search_4" slr="SLR3">
+            <args name="edges" master="true" memory="DDR[3]"/>
+            <args name="binary_0" master="true" memory="DDR[3]"/>
+            <args name="binary_1" master="true" memory="DDR[3]"/>
+            <args name="binary_2" master="true" memory="DDR[3]"/>
+            <args name="binary_3" master="true" memory="DDR[3]"/>
+            <args name="row_offset_0" master="true" memory="DDR[3]"/>
+            <args name="row_offset_1" master="true" memory="DDR[3]"/>
+            <args name="row_offset_2" master="true" memory="DDR[3]"/>
+            <args name="row_offset_3" master="true" memory="DDR[3]"/>
+            <args name="edge_size"/>
+            <args name="segment_head_stream_out"/>
+          </computeUnits>
+        </kernels>
+        <kernels name="dispatch" projectName="GraSU_kernels">
+          <computeUnits name="dispatch_1" slr="SLR1">
+            <args name="size"/>
+            <args name="segment_head_stream_1"/>
+            <args name="segment_head_stream_2"/>
+            <args name="segment_head_stream_3"/>
+            <args name="segment_head_stream_4"/>
+            <args name="dispatch_to_process_cache_1"/>
+            <args name="dispatch_to_process_cache_2"/>
+            <args name="dispatch_to_process_ddr_1"/>
+            <args name="dispatch_to_process_ddr_2"/>
+          </computeUnits>
+        </kernels>
+        <kernels name="process_cache" projectName="GraSU_kernels" numComputeUnits="2">
+          <computeUnits name="process_cache_1" slr="SLR0">
+            <args name="pma_cache" master="true" memory="DDR[0]"/>
+            <args name="update_stream"/>
+          </computeUnits>
+          <computeUnits name="process_cache_2" slr="SLR2">
+            <args name="pma_cache" master="true" memory="DDR[2]"/>
+            <args name="update_stream"/>
+          </computeUnits>
+        </kernels>
+        <kernels name="process_ddr" projectName="GraSU_kernels" numComputeUnits="2">
+          <computeUnits name="process_ddr_1" slr="SLR1">
+            <args name="pma_in0_ddr" master="true" memory="DDR[1]"/>
+            <args name="pma_in1_ddr" master="true" memory="DDR[1]"/>
+            <args name="pma_out0_ddr" master="true" memory="DDR[1]"/>
+            <args name="pma_out1_ddr" master="true" memory="DDR[1]"/>
+            <args name="update_stream"/>
+          </computeUnits>
+          <computeUnits name="process_ddr_2" slr="SLR3">
+            <args name="pma_in0_ddr" master="true" memory="DDR[3]"/>
+            <args name="pma_in1_ddr" master="true" memory="DDR[3]"/>
+            <args name="pma_out0_ddr" master="true" memory="DDR[3]"/>
+            <args name="pma_out1_ddr" master="true" memory="DDR[3]"/>
+            <args name="update_stream"/>
+          </computeUnits>
+        </kernels>
+      </binaryContainers>
+    </configBuildOptions>
+    <lastBuildOptions xsi:type="hwlink:LinkOptions" target="hw">
+      <binaryContainers name="GraSU" xoccOptions="--config stream_connect.ini --kernel_frequency 200" traceMemory="FIFO:8K">
+        <kernels name="bin_search" projectName="GraSU_kernels" numComputeUnits="4">
+          <computeUnits name="bin_search_1" slr="SLR0">
+            <args name="edges" master="true" memory="DDR[0]"/>
+            <args name="binary_0" master="true" memory="DDR[0]"/>
+            <args name="binary_1" master="true" memory="DDR[0]"/>
+            <args name="binary_2" master="true" memory="DDR[0]"/>
+            <args name="binary_3" master="true" memory="DDR[0]"/>
+            <args name="row_offset_0" master="true" memory="DDR[0]"/>
+            <args name="row_offset_1" master="true" memory="DDR[0]"/>
+            <args name="row_offset_2" master="true" memory="DDR[0]"/>
+            <args name="row_offset_3" master="true" memory="DDR[0]"/>
+            <args name="edge_size"/>
+            <args name="segment_head_stream_out"/>
+          </computeUnits>
+          <computeUnits name="bin_search_2" slr="SLR1">
+            <args name="edges" master="true" memory="DDR[1]"/>
+            <args name="binary_0" master="true" memory="DDR[1]"/>
+            <args name="binary_1" master="true" memory="DDR[1]"/>
+            <args name="binary_2" master="true" memory="DDR[1]"/>
+            <args name="binary_3" master="true" memory="DDR[1]"/>
+            <args name="row_offset_0" master="true" memory="DDR[1]"/>
+            <args name="row_offset_1" master="true" memory="DDR[1]"/>
+            <args name="row_offset_2" master="true" memory="DDR[1]"/>
+            <args name="row_offset_3" master="true" memory="DDR[1]"/>
+            <args name="edge_size"/>
+            <args name="segment_head_stream_out"/>
+          </computeUnits>
+          <computeUnits name="bin_search_3" slr="SLR2">
+            <args name="edges" master="true" memory="DDR[2]"/>
+            <args name="binary_0" master="true" memory="DDR[2]"/>
+            <args name="binary_1" master="true" memory="DDR[2]"/>
+            <args name="binary_2" master="true" memory="DDR[2]"/>
+            <args name="binary_3" master="true" memory="DDR[2]"/>
+            <args name="row_offset_0" master="true" memory="DDR[2]"/>
+            <args name="row_offset_1" master="true" memory="DDR[2]"/>
+            <args name="row_offset_2" master="true" memory="DDR[2]"/>
+            <args name="row_offset_3" master="true" memory="DDR[2]"/>
+            <args name="edge_size"/>
+            <args name="segment_head_stream_out"/>
+          </computeUnits>
+          <computeUnits name="bin_search_4" slr="SLR3">
+            <args name="edges" master="true" memory="DDR[3]"/>
+            <args name="binary_0" master="true" memory="DDR[3]"/>
+            <args name="binary_1" master="true" memory="DDR[3]"/>
+            <args name="binary_2" master="true" memory="DDR[3]"/>
+            <args name="binary_3" master="true" memory="DDR[3]"/>
+            <args name="row_offset_0" master="true" memory="DDR[3]"/>
+            <args name="row_offset_1" master="true" memory="DDR[3]"/>
+            <args name="row_offset_2" master="true" memory="DDR[3]"/>
+            <args name="row_offset_3" master="true" memory="DDR[3]"/>
+            <args name="edge_size"/>
+            <args name="segment_head_stream_out"/>
+          </computeUnits>
+        </kernels>
+        <kernels name="dispatch" projectName="GraSU_kernels">
+          <computeUnits name="dispatch_1" slr="SLR1">
+            <args name="size"/>
+            <args name="segment_head_stream_1"/>
+            <args name="segment_head_stream_2"/>
+            <args name="segment_head_stream_3"/>
+            <args name="segment_head_stream_4"/>
+            <args name="dispatch_to_process_cache_1"/>
+            <args name="dispatch_to_process_cache_2"/>
+            <args name="dispatch_to_process_ddr_1"/>
+            <args name="dispatch_to_process_ddr_2"/>
+          </computeUnits>
+        </kernels>
+        <kernels name="process_cache" projectName="GraSU_kernels" numComputeUnits="2">
+          <computeUnits name="process_cache_1" slr="SLR0">
+            <args name="pma_cache" master="true" memory="DDR[0]"/>
+            <args name="update_stream"/>
+          </computeUnits>
+          <computeUnits name="process_cache_2" slr="SLR2">
+            <args name="pma_cache" master="true" memory="DDR[2]"/>
+            <args name="update_stream"/>
+          </computeUnits>
+        </kernels>
+        <kernels name="process_ddr" projectName="GraSU_kernels" numComputeUnits="2">
+          <computeUnits name="process_ddr_1" slr="SLR1">
+            <args name="pma_in0_ddr" master="true" memory="DDR[1]"/>
+            <args name="pma_in1_ddr" master="true" memory="DDR[1]"/>
+            <args name="pma_out0_ddr" master="true" memory="DDR[1]"/>
+            <args name="pma_out1_ddr" master="true" memory="DDR[1]"/>
+            <args name="update_stream"/>
+          </computeUnits>
+          <computeUnits name="process_ddr_2" slr="SLR3">
+            <args name="pma_in0_ddr" master="true" memory="DDR[3]"/>
+            <args name="pma_in1_ddr" master="true" memory="DDR[3]"/>
+            <args name="pma_out0_ddr" master="true" memory="DDR[3]"/>
+            <args name="pma_out1_ddr" master="true" memory="DDR[3]"/>
+            <args name="update_stream"/>
+          </computeUnits>
+        </kernels>
+      </binaryContainers>
+    </lastBuildOptions>
+  </configuration>
+</hwlink:HwLinkProject>
