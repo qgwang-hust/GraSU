@@ -22,7 +22,7 @@ Ubuntu 18.04 LTS
 
 [Alveo U250 Package File on Vitis 2020.2](https://www.xilinx.com/support/download/index.html/content/xilinx/en/downloadNav/alveo/u250.html)
 
-## Run the code
+## Getting Started Guide
 
 1. Install the software development environment according to [Xilinx documentation](https://www.xilinx.com/support/documentation/boards_and_kits/accelerator-cards/1_9/ug1301-getting-started-guide-alveo-accelerator-cards.pdf). After installation, you can use commands
 
@@ -57,6 +57,15 @@ $ cd GraSU/GraSU/Hardware
 $ ./GraSU ./GraSU.xclbin <graph_file> <result_file>     # run the program
 ```
 
+Datasets
+--------
+
+The datasets come from the following sources:
+
+* [Stanford Large Network Dataset Collection](http://snap.stanford.edu/data/index.html)
+
+* [Network Repository](https://networkrepository.com)
+
 
 ## Related publications
 
@@ -77,4 +86,4 @@ If you use GraSU, please cite our research paper published at FPGA 2021.
 ```
 
 ## License & Copyright of GraSU
-GraSU is implemented by Qinggang Wang and [Ao Hu](https://github.com/pauvrepetit) at Cluster and Grid Computing Lab & Services Computing Technology and System Lab in Huazhong University of Science and Technology([HUST SCTS & CGCL Lab](http://grid.hust.edu.cn/)), the copyright of this GraSU remains with CGCL & SCTS Lab of Huazhong University of Science and Technology.
+GraSU is implemented by [Qinggang Wang](https://github.com/qgwang-hust) and [Ao Hu](https://github.com/pauvrepetit) at Cluster and Grid Computing Lab & Services Computing Technology and System Lab in Huazhong University of Science and Technology([HUST SCTS & CGCL Lab](http://grid.hust.edu.cn/)), the copyright of this GraSU remains with CGCL & SCTS Lab of Huazhong University of Science and Technology.
